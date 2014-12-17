@@ -15,8 +15,10 @@
 #
 
 ifeq ($(TARGET_BOARD_PLATFORM),exynos4)
-
+ifeq ($(TARGET_SOC),exynos4210)
+exynos4_dirs := libgralloc_ump
+else
 exynos4_dirs := libgralloc_ump libhdmi libhwcomposer libhwconverter libsecion libfimc libhwjpeg libfimg libUMP
-
+endif
 include $(call all-named-subdir-makefiles,$(exynos4_dirs))
 endif
