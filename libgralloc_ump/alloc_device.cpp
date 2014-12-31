@@ -71,7 +71,7 @@
 #endif
 #ifdef SAMSUNG_EXYNOS4210
 #define PFX_NODE_FIMC0   "/dev/video0"
-#define PFX_NODE_FIMC1   "/dev/video1"
+#define PFX_NODE_FIMC1   "/dev/video3"
 #endif
 
 #ifndef OMX_COLOR_FormatYUV420Planar
